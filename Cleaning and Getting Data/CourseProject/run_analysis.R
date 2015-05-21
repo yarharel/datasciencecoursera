@@ -51,4 +51,7 @@ MSDS$label<-sapply(MSDS$label,FUN=function(x){
 ## summarise this result over each variable using summarise_each
 ## do a mean over these variables.
 OutputSet<-MSDS %>% group_by(subject,label) %>% summarise_each(funs(mean))
+
+##write output
+write.table(OutputSet,file = "output.txt",row.name=FALSE)
     
