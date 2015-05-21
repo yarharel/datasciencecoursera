@@ -30,4 +30,4 @@
 * Performed group by on necessary columns
 * Used summarise_each function to go over all columns and cacluate their means
 * Assigned it to output variable OutputSet
-
+* Write varialbe into txt file, Output.txt
